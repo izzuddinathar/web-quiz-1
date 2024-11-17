@@ -1,0 +1,130 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #42C0D7;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  line-height: 1.5rem;
+  color: #747474;
+}
+
+@font-face {
+  font-family: 'Aptos';
+  src: url('/fonts/Aptos.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-aptos {
+  font-family: 'Aptos', sans-serif;
+}
+
+.home-title{
+  color: #30a2b6;
+}
+
+p {
+  font-family: 'Aptos', sans-serif;
+  color: #747474;
+  margin-bottom: 10px;
+}
+
+ol > li {
+  color : #747474;
+  font-family: 'Aptos', sans-serif;
+}
+
+.content-ul {
+  font-family: 'Aptos', sans-serif;
+  color: #747474;
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* Navigation styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e9fb3;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0 4rem;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #2e9fb3;
+}
+
+.hamburger {
+  display: none; 
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+      display: none; 
+      flex-direction: column; 
+      width: 100%;
+      background-color: #333; 
+  }
+
+  .nav.active {
+      display: flex; 
+  }
+
+  .nav-link {
+      padding: 10px 20px; 
+      width: 100%; 
+      text-align: left; 
+  }
+
+  .hamburger {
+      display: block; 
+      margin: 2rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+}
+.nav-item > a {
+  color: white;
+  padding: 2rem 1.5rem;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f6f2f0;
+}
+
+.card {
+  border-radius: 1.5rem;
+}
